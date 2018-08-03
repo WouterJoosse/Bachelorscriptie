@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mysql:
+    container_name: scriptie_db
+    restart: always
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: 'scriptie'
+      MYSQL_USER: 'scriptie'
+      MYSQL_PASS: 'isiealaf?'
+    volumes:
+      - scriptiedb_volume:/var/lib/mysql
+      - ./datafiles/sql/db_init:/docker-entrypoint-initdb.d/
+    ports:
+      - "3306:3306"
+volumes:
+  scriptiedb_volume:

@@ -1,0 +1,34 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[a4paper, margin=25mm]{geometry} % A4 paper - Word margins
+\usepackage[backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+
+%opening
+\title{Onderzoeksplan Bachelorscriptie}
+\author{C.W. Joosse \\ Studentnr: 4158407 \\ Student Kunstmatige Intelligentie \\ Utrecht University}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introduction}
+In order to reconstruct the population of The Netherlands in the 19th century, a database has been created containing records from the Dutch statutory registration services such as birth-, marriage- and death-certificates, which are digitalized by volunteers. Due to data-collection practices when the original certificates where produced, these certificates are not provided with a unique identifier per person, which makes it harder to do research. An example of research that is done is to reconstruct the life courses of the civilians in the Netherlands in the 19th century. \\
+The problem of record linkage is a more general problem, and is used in all sorts of disciplines. There are several well known record linkage techniques that can be applied in order to link the certificates of one person to each other. However, there are some specific problems that arise because of the nature of the data.
+
+
+\section{Problem definition}
+The dataset mainly consist of the names of the persons that the certificates apply to. Record linkage of historical data is often problematic due to the fact that data can be inaccurate. In the case of the dataset used in this research, this is mainly due to inconsistent naming of persons in birth-, marriage- and death-certificates. For instance, someone that has been born as 'Cornelis' could die as 'Cor'. Often these problems are enhanced when the historical data is digitalized, because field in the certificates could not be properly read. \\
+When trying to preform record linkage on the dataset, one should find methods to deal with these name variations. 
+
+\section{Objective}
+A previous study has been done to create a model that can link certificates to a distinct person, in order to reconstruct the life-courses of the inhabitants in The Netherlands. I will try to analyse the correctness of the generated links, for example by looking at missing events in life-courses or looking at life-events that are coupled with other life events. \\
+The model only checks for first first names. However, it was not uncommon for people to have multiple first names. These names are now ignored. I will try to improve the performance of the model by taking other first names into account as well. 
+When time allows other methods, such as Markov Logic, can also be explored.
+
+\section{Supervision}
+This research will start in February 2017. The duration will be 20 weeks and will finish in June 2017. Supervision will be provided by dr. ir. Gerrit Bloothooft.
+\nocite{*}
+\printbibliography
+\end{document}

@@ -1,0 +1,27 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Overview of research on record linkage}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{The Genlias project}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{An overview of the method}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Data}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Description of the records}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Preprocessing}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Initial Matching}{section.2.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Method}{}% 9
+\BOOKMARK [1][-]{section.3.1}{String matching}{chapter.3}% 10
+\BOOKMARK [2][-]{subsection.3.1.1}{Building the vectortree}{section.3.1}% 11
+\BOOKMARK [2][-]{subsection.3.1.2}{Matching the candidates}{section.3.1}% 12
+\BOOKMARK [1][-]{section.3.2}{Matching with higher thresholds}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.2.1}{Name pair matching}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{Allowing more distance}{section.3.2}% 15
+\BOOKMARK [1][-]{section.3.3}{Assessment of birth certificate matches}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Results and discussion}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Initial matching results}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.1.1}{Vectortree matching}{section.4.1}% 19
+\BOOKMARK [2][-]{subsection.4.1.2}{Overlinking and underlinking}{section.4.1}% 20
+\BOOKMARK [1][-]{section.4.2}{Named Pair based matching results}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Filtering birth certificates}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Further Research}{chapter.5}% 25
+\BOOKMARK [0][-]{section*.2}{Appendices}{}% 26
+\BOOKMARK [0][-]{Appendix.1.A}{Edit distance}{}% 27

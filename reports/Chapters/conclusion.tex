@@ -1,0 +1,20 @@
+This thesis tried to find a method for matching life events taken from historical civil records by looking at the names present on these records. \\
+
+A tree-search algorithm was used to generate matches based on the edit distance of the names on the registrations, where the edit distance varied in order to see if it is possible to account for the high level of spelling variations of these names. The matches where filtered by applying rules to the matches and to filter out those matches where the distance was too much concentrated in a single name. \\
+After this filtering, the resulting matches where checked for internal consistency by applying real world logic to the generated matches. \\
+
+When increasing the edit distance, the importance of extra checks on the distribution of the edit distance over the names becomes more important. This can be seen in the number of matches that are dropped in the second step of the method, because of the distribution of the edit distance over the names. \\
+
+Although this thesis provides some judgement on the quality of the matches, it does not evaluate the matches using objective measurements. It is therefore difficult to make a sound conclusion about the effectiveness of the approach. 
+
+\section{Further Research}
+For a proper evaluation of the matches generated with a higher edit distance, it might be interesting to conduct clerical review of the generated matches, in order to provide a golden standard for further research. Machine learning algorithmes like active learning might also be used to generate true matches.\\
+
+In order to improve the filtering, the name pair comparison can also be done using name variants, in order make a more informed decision about the nature of the error. Extra rules might be set up for the nature of the error, such as probability rules based on name variants. It also might be interesting to see if name variants evolved throughout time.\\
+
+In the third phase the consistency of the generated sets of families was checked in a fairly basic manner. More thorough checks could be done; for instance by checking the following criteria:
+\begin{itemize}
+	\item Life course consistency: when the matches on marriage and death registrations are also considered, are there registrations that are inconsistent with the previous matched registrations. For instance: a marriage registration is matched with a event date that is later then a death certificate of that person.
+	\item Location / Sex consistency: In the case of two competing registrations, to what extend can the locations on those registration be used to rule out a registration? This could also be checked for the sex of the persons on the registrations.
+	\item Name variant consistency: If there are life events missing, are there registrations in the family set where the name of the ego/ega is a name variant of the name for which a certificate is missing? For instance: if the birth and death certificate of \textit{Cornelis} are consistent, but we have a missing marriage certificate and we have a single marriage certificate for a \textit{Cor}, what are the conditions that allow us to accept the marriage certificate of \textit{Cor} to be accepted as the marriage certificate of \textit{Cornelis}?
+\end{itemize}

@@ -1,0 +1,39 @@
+\chapter{Edit distance}
+The method that is used to compare a candidate record to a target record is the Levenshtein distance, which is a function to calculate the distance between two strings. The method was introduced by \cite{levenshtein1966binary}. Given two strings \textit{a} and \textit{b}, the distance between \textit{a} and \textit{b} can be defined as the number of operations that need to be executed in order to convert string \textit{a} into string \textit{b} (or \textit{b} into \textit{a}, since the operations are symmetric). \\
+The original Levenshtein function assumes three operations: deletion, insertion and substitution of characters in a string, where each operation has a cost of 1. This results in an Levenshtein distance that represents the number of operations. Several variations of the Levenshtein distance exists, where either the cost associated with an operation varies, or the set of operations is altered to allow different operations (such as swapping to characters, also known as transposition) or to disallow certain operations. In our approach, we use the original Levenshtein distance. \\
+
+The Levenshtein distance is calculated in $O(\vert a \vert \times \vert b \vert)$ time, where $\vert \cdot \vert$ denotes the length of a string. This is done by using a dynamic programming algorithm, that uses a matrix with $\vert a \vert + 1$ columns and $\vert b \vert + 1$ rows. Each letter in \textit{a} is associated with a column, and the first column is used for an empty space. An example can be seen in table \ref{tab:LD_example}, where the strings \textit{Peter} and \textit{Pieter} are compared to each other. In order to calculate the Levenshtein distance, the value 0 is assigned to the cell $d[0,0]$ (corresponding to the empty spaces). Then, in a recursive manner, the remaining cells are filled according to the following function:
+
+\begin{equation}
+	d[i,j] =
+		\begin{cases}
+			d[i-1, j-1] & \text{if }a[i] = b[j]\\
+			minimum \left\{ 
+				\begin{array}{lr}
+					d[i-1, j] & \text{(deletion)} \\
+					d[i, j-1] & \text{(insertion)}\\
+					d[i-1, j-1] + 1 & \text{(substitution)}\\
+			\end{array} 
+				\right \} & \text{if } a[i] \not = b[j]\\
+	\end{cases}
+\end{equation} with $0 \leq i \leq \vert a \vert$ and $0 \leq j \leq \vert b \vert$. The resulting value in cell $d[\vert a \vert, \vert b \vert]$ is the final value for the Levenshtein distance between string \textit{a} and string \textit{b}.
+
+\begin{table}
+	\begin{center}
+	\caption[Example of Levenshtein edit distance]{\label{tab:LD_example}The Levenshtein edit distance for the strings. The bold digits represent the path to the final result. \textit{Peter} and \textit{Pieter}}
+	\vspace{0.5cm}
+	\begin{tabular}{|c|*{7}{c|}}
+		\toprule
+		  &   & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+		  &   & \textvisiblespace & P & e & t & e & r \\ \hline
+		0 & \textvisiblespace & \textbf{0} & 1 & 2 & 3 & 4 & 5 \\ \hline
+		1 & P & 1 & \textbf{0} & 1 & 2 & 3 & 4\\ \hline
+		2 & i & 2 & 1 & \textbf{1} & 2 & 3 & 4\\ \hline
+		3 & e & 3 & 2 & \textbf{1} & 2 & 3 & 4\\ \hline
+		4 & t & 4 & 3 & 2 & \textbf{1} & 2 & 3\\ \hline
+		5 & e & 5 & 4 & 3 & 2 & \textbf{1} & 2\\ \hline
+		6 & r & 6 & 5 & 4 & 3 & 2 & \textbf{1}\\ 
+		\bottomrule
+	\end{tabular}
+	\end{center}
+\end{table}

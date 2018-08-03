@@ -1,0 +1,79 @@
+\begin{thebibliography}{}
+
+\bibitem[Bloothooft, 1995]{bloothooft1995rules}
+Bloothooft, G. (1995).
+\newblock Rules for semi-phonetic conversion of first names and family names.
+\newblock {\em Uil-OTS internal report (in Dutch)}.
+
+\bibitem[Bloothooft and Schraagen, 2014]{bloothooft2014learning}
+Bloothooft, G. and Schraagen, M. (2014).
+\newblock Learning name variants from true person resolution.
+\newblock {\em Proceedings of the International Workshop of Population
+  Reconstruction}.
+
+\bibitem[Dunn, 1946]{dunn1946record}
+Dunn, H.~L. (1946).
+\newblock Record linkage.
+\newblock {\em American Journal of Public Health and the Nations Health},
+  36(12):1412--1426.
+
+\bibitem[Fellegi and Sunter, 1969]{fellegi1969theory}
+Fellegi, I.~P. and Sunter, A.~B. (1969).
+\newblock A theory for record linkage.
+\newblock {\em Journal of the American Statistical Association},
+  64(328):1183--1210.
+
+\bibitem[Jaro, 1989]{jaro1989advances}
+Jaro, M.~A. (1989).
+\newblock Advances in record-linkage methodology as applied to matching the
+  1985 census of tampa, florida.
+\newblock {\em Journal of the American Statistical Association},
+  84(406):414--420.
+
+\bibitem[Levenshtein, 1966]{levenshtein1966binary}
+Levenshtein, V.~I. (1966).
+\newblock Binary codes capable of correcting deletions, insertions, and
+  reversals.
+\newblock In {\em Soviet physics doklady}, volume~10, pages 707--710.
+
+\bibitem[Newcombe and Kennedy, 1962]{newcombe1962record}
+Newcombe, H.~B. and Kennedy, J.~M. (1962).
+\newblock Record linkage: making maximum use of the discriminating power of
+  identifying information.
+\newblock {\em Communications of the ACM}, 5(11):563--566.
+
+\bibitem[Russell and Odell, 1918]{russell1918soundex}
+Russell, R. and Odell, M. (1918).
+\newblock Soundex.
+\newblock {\em US patent}, 1:88.
+
+\bibitem[Sarawagi et~al., 2002]{sarawagi2002alias}
+Sarawagi, S., Bhamidipaty, A., Kirpal, A., and Mouli, C. (2002).
+\newblock Alias: An active learning led interactive deduplication system.
+\newblock In {\em VLDB'02: Proceedings of the 28th International Conference on
+  Very Large Databases}, pages 1103--1106. Elsevier.
+
+\bibitem[Schraagen, 2014]{Aspects001}
+Schraagen, M. (2014).
+\newblock {\em Aspects of Record Linkage}.
+\newblock PhD thesis, Universiteit Leiden.
+
+\bibitem[Winkler, 1990]{winkler1990string}
+Winkler, W.~E. (1990).
+\newblock String comparator metrics and enhanced decision rules in the
+  fellegi-sunter model of record linkage.
+
+\bibitem[Winkler, 2002]{winkler2002methods}
+Winkler, W.~E. (2002).
+\newblock Methods for record linkage and bayesian networks.
+\newblock Technical report, Technical report, Statistical Research Division, US
+  Census Bureau, Washington, DC.
+
+\bibitem[Zobel and Dart, 1996]{zobel1996phonetic}
+Zobel, J. and Dart, P. (1996).
+\newblock Phonetic string matching: Lessons from information retrieval.
+\newblock In {\em Proceedings of the 19th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  166--172. ACM.
+
+\end{thebibliography}

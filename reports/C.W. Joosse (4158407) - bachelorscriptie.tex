@@ -1,0 +1,88 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+ 	
+\usepackage{graphicx}
+\usepackage{booktabs} % for nice tables
+\usepackage{multirow}
+
+\usepackage{amsmath}
+
+\usepackage{qtree}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper, margin=25mm]{geometry}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{graphicx}
+
+\usepackage[toc,page]{appendix}
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+
+        \vspace*{1cm}
+        \Huge
+        \textbf{Reconstructing families - Bachelor Thesis}
+
+        \vspace*{5cm}
+
+        \LARGE
+        \textbf{C.W. Joosse}\\
+        4158407\\
+        \today
+        \vfill
+        \Large
+        UTRECHT UNIVERSITY\\
+        Artificial Intelligence\\
+        \vspace*{0.5cm}
+        Supervisor: dr. ir. Gerrit Bloothooft\\
+        Second supervisor: dr. Marijn Schraagen\\
+
+        \vspace*{1cm}
+        \large
+        Bachelor thesis - 15 ECTS\\
+    \end{center}
+\end{titlepage}
+
+\abstract{Edit distance is often used in record linkage for real persons to express the similarity of two names. In historical data names often have high spelling variance. This study investigates a method to deal with high name spelling variance by using overlinking and filtering in order to generate matches on a dataset of historical civil registrations. The method tries to build sets of registrations of persons that belong to the same family by applying real world knowledge to the generated matches. When using the four names of the parents mentioned on the registrations and an edit distance of 4 and 5, 80\% to 85\% of the generated matches are consistent with real world knowledge.}
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{Chapters/introduction}
+
+%\chapter{Theoretical Background}
+%\input{Chapters/theoretical_background}
+
+\chapter{Data}
+\input{Chapters/data}
+
+\chapter{Method}
+\input{Chapters/method}
+
+\chapter{Results and discussion}
+\input{Chapters/results}
+
+\chapter{Conclusion}
+\vspace{-1cm}
+\input{Chapters/conclusion}
+
+\begin{appendices}
+\input{Chapters/appendices}
+\end{appendices}
+
+\listoffigures
+\listoftables
+
+\bibliographystyle{apalike}
+\bibliography{bibliography_bibtex} 
+
+\end{document}
